@@ -1,0 +1,8 @@
+{
+  "path": "",
+  "lifetime": 86400000,
+  "cron": {
+    "pattern": "0 0 */1 * * *",
+    "debug": false
+  }
+}
