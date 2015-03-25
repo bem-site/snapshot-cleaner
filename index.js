@@ -1,7 +1,7 @@
 var fsExtra = require('fs-extra'),
     SnapshotCleaner = require('./lib/cleaner');
 
-fsExtra.readJSON('./config/config.json', function (error, config) {
+fsExtra.readJSON('./config/_config.json', function (error, config) {
     if (error) {
         throw error;
     }
