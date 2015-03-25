@@ -1,12 +1,10 @@
-var path = require('path'),
-    config = require('nconf'),
+var fsExtra = require('fs-extra'),
     SnapshotCleaner = require('./lib/cleaner');
 
-config.env();
-config.add('config', {
-    type: 'file',
-    file: path.resolve(__dirname, './config/_config.json')
+fsExtra.readJSON('./config/config.json', function (error, config) {
+    if (error) {
+        throw error;
+    }
+    var sc = new SnapshotCleaner(config);
+    sc.start();
 });
-
-var sc = new SnapshotCleaner();
-sc.start();
