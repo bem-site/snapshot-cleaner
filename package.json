@@ -1,6 +1,6 @@
 {
   "name": "snapshot-cleaner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/bem-site/snapshot-cleaner.git"
@@ -23,7 +23,6 @@
     "inherit": "^2.2.x",
     "lodash": "^3.1.x",
     "moment": "^2.9.0",
-    "nconf": "^0.7.x",
     "vow": "~0.4.x",
     "vow-node": "^0.2.x"
   },
