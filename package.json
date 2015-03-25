@@ -36,6 +36,7 @@
     "jscs": "^1.11.x"
   },
   "scripts": {
+    "config": "cp config/config.json config/_config.json",
     "mocha": "NODE_ENV=testing node_modules/.bin/mocha",
     "istanbul": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "codestyle": "node_modules/.bin/jshint . && node_modules/.bin/jscs -c .jscs.js .",
