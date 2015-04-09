@@ -3,7 +3,7 @@
   "lifetime": 86400000,
   "symlinks": ["testing", "production"],
   "cron": {
-    "pattern": "0 0 */1 * * *",
-    "debug": false
-  }
+    "pattern": "0 0 */1 * * *"
+  },
+  "logger": {}
 }
